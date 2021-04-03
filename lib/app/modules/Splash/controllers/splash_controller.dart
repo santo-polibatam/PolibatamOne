@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:get/get.dart';
+import 'package:polibatam_one/app/routes/app_pages.dart';
 
 class SplashController extends GetxController {
   //TODO: Implement SplashController
@@ -11,6 +14,7 @@ class SplashController extends GetxController {
 
   @override
   void onReady() {
+    Timer(Duration(seconds: 5), () => Routes.LOGIN);
     super.onReady();
   }
 
