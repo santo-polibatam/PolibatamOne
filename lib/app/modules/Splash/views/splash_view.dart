@@ -5,6 +5,7 @@ import 'package:lottie/lottie.dart';
 import '../controllers/splash_controller.dart';
 
 class SplashView extends GetView<SplashController> {
+  final SplashController controller = Get.put(SplashController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +26,10 @@ class SplashView extends GetView<SplashController> {
               // height: 200,
               width: 200,
               child: LottieBuilder.asset('assets/lottie/splash.json'),
-            )
+            ),
+            // ElevatedButton(
+            //     onPressed: () => Get.changeTheme(ThemeData.dark()),
+            //     child: Text("Change Theme"))
           ],
         ),
       ),

@@ -5,7 +5,7 @@ import 'package:polibatam_one/app/routes/app_pages.dart';
 
 class SplashController extends GetxController {
   //TODO: Implement SplashController
-
+  //
   final count = 0.obs;
   @override
   void onInit() {
@@ -14,7 +14,7 @@ class SplashController extends GetxController {
 
   @override
   void onReady() {
-    Timer(Duration(seconds: 5), () => Routes.LOGIN);
+    Timer(Duration(milliseconds: 1700), () => Get.offAndToNamed(Routes.LOGIN));
     super.onReady();
   }
 
