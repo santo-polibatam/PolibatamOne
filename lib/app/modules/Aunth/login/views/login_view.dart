@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:polibatam_one/Constants/Const.dart';
+import 'package:polibatam_one/app/modules/Aunth/Login/views/body.dart';
 
 import '../controllers/login_controller.dart';
 
@@ -9,15 +11,11 @@ class LoginView extends GetView<LoginController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('LoginView'),
+        backgroundColor: kPrimaryColor,
         centerTitle: true,
+        title: Text('Login', style: TextStyle(color: Colors.white)),
       ),
-      body: Center(
-        child: Text(
-          'LoginView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+      body: Body(),
     );
   }
 }
