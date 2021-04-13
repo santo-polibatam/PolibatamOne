@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:polibatam_one/Config/size_config.dart';
+import 'package:polibatam_one/app/core/Config/size_config.dart';
 import 'package:polibatam_one/app/modules/Aunth/Login/controllers/login_controller.dart';
 import 'package:polibatam_one/app/modules/Aunth/Login/views/sign_form_view.dart';
 

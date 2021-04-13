@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:polibatam_one/Config/size_config.dart';
+import 'package:polibatam_one/app/core/Config/size_config.dart';
+
 import '../controllers/splash_controller.dart';
 
 class SplashView extends GetView<SplashController> {
