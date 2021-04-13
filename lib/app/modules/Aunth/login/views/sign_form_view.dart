@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:polibatam_one/Components/custom_surfix_icon.dart';
-import 'package:polibatam_one/Components/default_button.dart';
 import 'package:polibatam_one/Config/size_config.dart';
-import 'package:polibatam_one/Constants/Const.dart';
+import 'package:polibatam_one/app/core/Components/custom_surfix_icon.dart';
+import 'package:polibatam_one/app/core/Components/default_button.dart';
+import 'package:polibatam_one/app/core/Constants/Const.dart';
+import 'package:polibatam_one/app/modules/Aunth/Login/controllers/login_controller.dart';
 
-class SignForm extends StatefulWidget {
-  @override
-  _SignFormState createState() => _SignFormState();
-}
-
-class _SignFormState extends State<SignForm> {
+class SignFormView extends GetView<LoginController> {
   final _formKey = GlobalKey<FormState>();
   String email;
   String password;
@@ -19,17 +15,17 @@ class _SignFormState extends State<SignForm> {
   final List<String> errors = [];
 
   void addError({String error}) {
-    if (!errors.contains(error))
-      setState(() {
-        errors.add(error);
-      });
+    // if (!errors.contains(error))
+    // setState(() {
+    //   errors.add(error);
+    //});
   }
 
   void removeError({String error}) {
-    if (errors.contains(error))
-      setState(() {
-        errors.remove(error);
-      });
+    // if (errors.contains(error))
+    // setState(() {
+    //   errors.remove(error);
+    //});
   }
 
   @override
@@ -48,9 +44,9 @@ class _SignFormState extends State<SignForm> {
                 value: remember,
                 activeColor: kPrimaryColor,
                 onChanged: (value) {
-                  setState(() {
-                    remember = value;
-                  });
+                  // setState(() {
+                  //   remember = value;
+                  // });
                 },
               ),
               Text("Remember me"),
@@ -152,8 +148,6 @@ class _SignFormState extends State<SignForm> {
       decoration: InputDecoration(
         labelText: "Email",
         hintText: "Enter your email",
-        // If  you are using latest version of flutter then lable text and hint text shown like this
-        // if you r using flutter less then 1.20.* then maybe this is not working properly
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSurffixIcon(svgIcon: "assets/icons/Mail.svg"),
       ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:polibatam_one/Config/size_config.dart';
 import 'package:polibatam_one/app/modules/Aunth/Login/controllers/login_controller.dart';
-import 'package:polibatam_one/app/modules/Aunth/Login/views/sign_form.dart';
+import 'package:polibatam_one/app/modules/Aunth/Login/views/sign_form_view.dart';
 
 class Body extends GetView<LoginController> {
   @override
@@ -43,7 +43,8 @@ class Body extends GetView<LoginController> {
                 ),
 
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
-                SignForm(),
+                //SignForm(),
+                SignFormView(),
                 SizedBox(height: SizeConfig.screenHeight * 0.08),
 
                 //NoAccountText(),
